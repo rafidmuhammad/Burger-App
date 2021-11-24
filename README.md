@@ -1,3 +1,16 @@
-# Burger App
+# burger_app
 
-This is an assingment made for flutter course from dicoding. This app consits of two pages. First page will show you home page and the second page will show the order page.
+A flutter project made for flutter course from dicoding. This page consists of two page.The first page shows the home page and the second page shows the order page.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
