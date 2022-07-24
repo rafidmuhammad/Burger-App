@@ -3,10 +3,12 @@ import 'package:burger_app/widgets/drink.dart';
 import 'package:flutter/material.dart';
 
 class Order extends StatelessWidget {
+  const Order({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF7C319),
+      backgroundColor: const Color(0xffF7C319),
       body: SafeArea(
           child: SingleChildScrollView(
         child: Padding(
@@ -14,14 +16,14 @@ class Order extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               IconButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                icon: Icon(Icons.arrow_back_sharp),
+                icon: const Icon(Icons.arrow_back_sharp),
                 iconSize: 30,
               ),
               Center(
@@ -31,10 +33,10 @@ class Order extends StatelessWidget {
                   height: 183.78,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              Center(
+              const Center(
                 child: Text(
                   'Double Cheese\nBurger',
                   style: TextStyle(
@@ -45,10 +47,10 @@ class Order extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 11,
               ),
-              Center(
+              const Center(
                 child: Text(
                   "Double Patty with Double American Cheddar\nCheese And Our Signature Secret Sauce",
                   textAlign: TextAlign.center,
@@ -58,10 +60,10 @@ class Order extends StatelessWidget {
                       color: Color(0xff687A79)),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 18,
               ),
-              Text(
+              const Text(
                 'EXTRA',
                 style: TextStyle(
                     fontSize: 14,
@@ -69,7 +71,7 @@ class Order extends StatelessWidget {
                     fontWeight: FontWeight.w700),
                 textAlign: TextAlign.left,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
@@ -80,10 +82,10 @@ class Order extends StatelessWidget {
                   BoxSelect(imageurl: 'assets/images/patty.png'),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              Text(
+              const Text(
                 'DRINKS',
                 style: TextStyle(
                     fontSize: 14,
@@ -91,12 +93,12 @@ class Order extends StatelessWidget {
                     fontWeight: FontWeight.w700),
                 textAlign: TextAlign.left,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Center(
                 child: Container(
-                  margin: EdgeInsets.symmetric(horizontal: 5),
+                  margin: const EdgeInsets.symmetric(horizontal: 5),
                   width: 400,
                   height: 80,
                   decoration: BoxDecoration(
@@ -109,13 +111,13 @@ class Order extends StatelessWidget {
                         height: 75,
                         width: 100,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 9,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        children: const [
                           Text(
                             'COKE',
                             style: TextStyle(
@@ -128,7 +130,7 @@ class Order extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 117,
                       ),
                       Drink(),
@@ -136,7 +138,7 @@ class Order extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 42,
               ),
               Row(
@@ -144,23 +146,24 @@ class Order extends StatelessWidget {
                   Container(
                     width: 70,
                     height: 70,
-                    child: Icon(
+                    child: const Icon(
                       Icons.shopping_bag,
                       color: Color(0xff023E4A),
                     ),
                     decoration: BoxDecoration(
-                        border: Border.all(color: Color(0xff023E4A), width: 2),
+                        border: Border.all(
+                            color: const Color(0xff023E4A), width: 2),
                         borderRadius: BorderRadius.circular(8)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 22,
                   ),
                   Expanded(
                     child: Container(
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                             left: 24, right: 24, top: 17, bottom: 17),
                         child: Row(
-                          children: [
+                          children: const [
                             Text(
                               'ADD TO BAG',
                               style: TextStyle(
@@ -190,11 +193,11 @@ class Order extends StatelessWidget {
                         ),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8),
-                            color: Color(0xff023E4A))),
+                            color: const Color(0xff023E4A))),
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
             ],

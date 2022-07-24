@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Drink extends StatefulWidget {
+  const Drink({super.key});
+
   @override
   _DrinkState createState() => _DrinkState();
 }
@@ -13,7 +15,7 @@ class _DrinkState extends State<Drink> {
         icon: Icon(
           isAdd ? Icons.check_circle : Icons.add_circle,
           size: 30,
-          color: Color(0xff023E4A),
+          color: const Color(0xff023E4A),
         ),
         onPressed: () {
           setState(() {
