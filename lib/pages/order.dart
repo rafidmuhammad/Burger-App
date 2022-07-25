@@ -1,5 +1,5 @@
-import 'package:burger_app/widgets/addtobag.dart';
-import 'package:burger_app/widgets/boxselect.dart';
+import 'package:burger_app/widgets/add_to_bag.dart';
+import 'package:burger_app/widgets/box_select.dart';
 import 'package:burger_app/widgets/drink.dart';
 import 'package:flutter/material.dart';
 
@@ -80,9 +80,9 @@ class Order extends StatelessWidget {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: const [
-                        BoxSelect(imageurl: 'assets/images/cheese.png'),
-                        BoxSelect(imageurl: 'assets/images/onion.png'),
-                        BoxSelect(imageurl: 'assets/images/patty.png'),
+                        BoxSelect(imageUrl: 'assets/images/cheese.png'),
+                        BoxSelect(imageUrl: 'assets/images/onion.png'),
+                        BoxSelect(imageUrl: 'assets/images/patty.png'),
                       ],
                     ),
                   ),

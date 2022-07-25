@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BoxSelect extends StatefulWidget {
-  final String imageurl;
-  const BoxSelect({super.key, required this.imageurl});
+  final String imageUrl;
+  const BoxSelect({super.key, required this.imageUrl});
 
   @override
   _BoxSelectState createState() => _BoxSelectState();
@@ -15,11 +15,11 @@ class _BoxSelectState extends State<BoxSelect> {
   Widget build(BuildContext context) {
     return InkWell(
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 5),
+        margin: const EdgeInsets.symmetric(horizontal: 5),
         padding:
             const EdgeInsets.only(left: 24, right: 24, top: 15, bottom: 15),
         child: Image.asset(
-          widget.imageurl,
+          widget.imageUrl,
         ),
         width: 110,
         height: 80,
