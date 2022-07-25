@@ -134,7 +134,9 @@ class Order extends StatelessWidget {
                               )
                             ],
                           ),
-                          const Expanded(flex: 1, child: Drink()),
+                          Spacer(),
+                          Drink(),
+                          SizedBox(width: 20)
                         ],
                       ),
                     ),
