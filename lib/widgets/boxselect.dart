@@ -15,6 +15,7 @@ class _BoxSelectState extends State<BoxSelect> {
   Widget build(BuildContext context) {
     return InkWell(
       child: Container(
+        margin: EdgeInsets.symmetric(horizontal: 5),
         padding:
             const EdgeInsets.only(left: 24, right: 24, top: 15, bottom: 15),
         child: Image.asset(
@@ -24,7 +25,6 @@ class _BoxSelectState extends State<BoxSelect> {
         height: 80,
         decoration: BoxDecoration(
             color: isSelect ? const Color(0xff023E4A) : const Color(0xffffffff),
-            border: Border.all(color: const Color(0xff023E4A)),
             borderRadius: BorderRadius.circular(6)),
       ),
       onTap: () {
